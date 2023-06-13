@@ -1,0 +1,28 @@
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #ddd;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.teste {
+  /* background: red; */
+}
+
+.resolucao-pessoa {
+  border: none;
+  padding: 10px 20px;
+  border-radius: .4rem;
+}
+
+.pessoa {
+  font-size: 1.2rem;
+}

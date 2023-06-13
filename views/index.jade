@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  p.teste Seja bem-vindo ao #{title}
+  p 1. Desenvolver um servidor (linguagem a desejar) que tenha 2 (dois) endpoints. O servidor deverá ter integração com a base de dados.
+
+  ul
+    li a) Endpoint 01: realizar a chamada de uma função criada na base de dados e retornar os dados (exemplo: Lista de pessoas).
+    li b) Endpoint 02: realizar a chamada de uma stored procedure passando um código e através dele seja excluído o registro na base de dados (exemplo: código da pessoa).
+
+  h1.resolucao Resoluções
+
+  ul
+    each pessoa in pessoas
+      li= pessoa.NOME
+  
+  p clique no botão abaixo para ver a resolução do "endpoint1"
+  button.resolucao-pessoa
+    a.pessoa(href="/listar-pessoas") Listar pessoas
+
+  p clique no botão abaixo para ver a resolução do "endpoint2"
+  button.resolucao-pessoa
+    a.pessoa(href="/excluir-pessoa") Excluir pessoa
+
